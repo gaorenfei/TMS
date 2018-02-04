@@ -1,0 +1,237 @@
+﻿ul,
+ol,
+li,
+body,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+input,
+form,
+div,
+p,
+span,
+i,
+a,
+b,
+strong,
+img,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  outline: none;
+}
+
+img,
+input,
+textarea,
+a {
+  border: 0 none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+textarea {
+  resize: none;
+}
+
+.clearfix:after {
+  content: "200B";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "微软雅黑", Arial;
+  color: #333333;
+  font-size: 12px;
+  height: 100%;
+  min-width: 1340px;
+  background-color: #f1f3f5;
+}
+//公共页面，包含侧边栏样式
+#common-bg,
+#common-bg-sideBar-close,
+#common-bg-sideBar-open{
+  width: 100%;
+  background-color: #f1f3f5;
+  position: relative;
+  .common-value {
+    background-color: #fff;
+    margin: 0 25px;
+  }
+  .common-bottom {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    background-color: #f1f3f5;
+    color: #ddd;
+  }
+}
+#common-bg-sideBar-close{
+  animation:sideBarClose .5s;
+  -moz-animation: sideBarClose .5s;
+  /* Firefox */
+  -webkit-animation: sideBarClose .5s;
+  /* Safari and Chrome */
+  -o-animation: sideBarClose .5s;
+  /* Opera */
+  animation-fill-mode: forwards;
+  .common-value{
+    margin:0;
+  }
+}
+#common-bg-sideBar-open{
+  .common-value{
+    margin:0;
+  }
+  animation:sideBar .5s;
+  -moz-animation: sideBar .5s;
+  /* Firefox */
+  -webkit-animation: sideBar .5s;
+  /* Safari and Chrome */
+  -o-animation: sideBar .5s;
+  /* Opera */
+  animation-fill-mode: forwards;
+}
+@keyframes sideBarClose {
+  from {
+    width: calc(100% - 200px);
+    padding-left: 200px;
+  }
+  to {
+    width: calc(100% - 64px);
+    padding-left: 64px;
+  }
+}
+@-moz-keyframes sideBarClose {
+  from {
+    width: calc(100% - 200px);
+    padding-left: 200px;
+  }
+  to {
+    width: calc(100% - 64px);
+    padding-left: 64px;
+  }
+}
+@-webkit-keyframes sideBarClose {
+  from {
+    width: calc(100% - 200px);
+    padding-left: 200px;
+  }
+  to {
+    width: calc(100% - 64px);
+    padding-left: 64px;
+  }
+}
+@-o-keyframes sideBarClose {
+  from {
+    width: calc(100% - 200px);
+    padding-left: 200px;
+  }
+  to {
+    width: calc(100% - 64px);
+    padding-left: 64px;
+  }
+}
+@keyframes sideBar {
+  from {
+    width: calc(100% - 64px);
+    padding-left: 64px;
+  }
+  to {
+    width: calc(100% - 200px);
+    padding-left: 200px;
+  }
+}
+
+@-moz-keyframes sideBar {
+  from {
+    width: calc(100% - 64px);
+    padding-left: 64px;
+  }
+  to {
+    width: calc(100% - 200px);
+    padding-left: 200px;
+  }
+}
+
+@-webkit-keyframes sideBar {
+  from {
+    width: calc(100% - 64px);
+    padding-left: 64px;
+  }
+  to {
+    width: calc(100% - 200px);
+    padding-left: 200px;
+  }
+}
+
+@-o-keyframes sideBar {
+  from {
+    width: calc(100% - 64px);
+    padding-left: 64px;
+  }
+  to {
+    width: calc(100% - 200px);
+    padding-left: 200px;
+  }
+}
+
+
+#app {
+  height: 100%;
+}
+
+.select-box {
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 40px;
+}

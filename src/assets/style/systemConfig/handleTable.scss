@@ -1,0 +1,49 @@
+/* 自定义表格样式 */
+
+.handleTable {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  border: 1px solid #dfe6ec;
+  border-right: 0;
+  border-bottom: 0;
+  font-size: 14px;
+  color: #1f2d3d;
+  margin-top: 20px;
+}
+
+.fakeCommon {
+  height: 300px;
+}
+
+.handleTable table {
+  width: 100%;
+}
+
+.handleTable th {
+  height: 40px;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #eef1f6;
+  border-right: 1px solid #dfe6ec;
+  border-bottom: 1px solid #dfe6ec;
+  text-align: center;
+}
+
+.handleTable td {
+  height: 40px;
+  min-width: 0;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  text-align: center;
+  border-right: 1px solid #dfe6ec;
+  border-bottom: 1px solid #dfe6ec;
+  width: 371px;
+}
+
+.handleTable .firstTd {
+  width: 200px;
+}

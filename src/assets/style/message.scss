@@ -1,0 +1,30 @@
+#message-center {
+  .news-title {
+    height: 40px;
+    background-color: #3267d7;
+    font-size: 17px;
+    color: #fff;
+    padding: 20px 0 0 25px;
+  }
+  .el-step__head.is-text.is-finish {
+    background-color: #3267d7;
+    border-color: #3267d7;
+    color: #3267d7;
+  }
+  .el-step__head.is-text.is-process,
+  .el-step__head.is-text.is-wait {
+    color: #b5b5b5;
+    background-color: #b5b5b5;
+    border-color: #b5b5b5;
+  }
+  .el-step__line.is-vertical {
+    width: 4px;
+    box-sizing: border-box;
+    top: 32px;
+    bottom: 0;
+    left: 14px;
+  }
+  .el-step__line-inner {
+    border-width: 2px !important;
+  }
+}

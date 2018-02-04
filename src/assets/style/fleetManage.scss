@@ -1,0 +1,57 @@
+#fleetManage {
+    .fleet-value {
+        padding: 30px;
+        .fleet-type {
+            display: inline-block;
+        }
+        .new-fleet-btn {
+            margin-top: 30px;
+        }
+        .fleet-table {
+            margin-top: 30px;
+        } 
+    }
+    .newfleet-dialog{
+        .common-dialog{
+            .com-input, .el-select{
+                width:175px;
+            }
+            .el-form-item{
+                display: inline-block;
+            }
+            .el-dialog--small{
+                width:700px;
+            }
+        }
+    }
+    .newcar-dialog{
+        .newcar-title{
+            position: absolute;
+            top:20px;
+            left:110px;
+            span{
+                margin-right:15px;
+                color:#969696;
+            }
+        }
+        .common-dialog{
+            .el-dialog--small{
+                width:1200px;
+            }
+        }
+        .newcar-value{
+            padding:0px 20px;
+            .com-input{
+                width: 175px;
+                display: inline-block;
+            }
+            .newcar-input{
+                display: inline-block;
+                margin-right:20px;
+            }
+            .newCar-table{
+                margin-top:20px;
+            }
+        }
+    }
+}

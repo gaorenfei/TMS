@@ -1,0 +1,223 @@
+$top-color: #172331;
+
+/**头部高度**/
+
+@mixin header-height {
+  height: 70px;
+  line-height: 70px;
+}
+
+
+/**下拉背景颜色**/
+
+@mixin select-color {
+  background-color: #e4e6e8;
+}
+
+
+/**图标hover背景**/
+
+@mixin top-icon {
+  background-position: 0px;
+  background-color: $top-color;
+  border-bottom: none;
+}
+
+#navMenu {
+  /**头部导航样式**/
+  .nav-top {
+    background-color: $top-color;
+    height: 70px;
+    .home-logo {
+      height: 30px;
+      background-color: $top-color;
+      top: -16px;
+      position: relative;
+      left: 30px;
+    }
+    .el-menu {
+      display: inline-block;
+      @include select-color;
+      left: 100px;
+      li {
+        div {
+          color: #c8c8ca;
+          background-color: $top-color;
+          padding: 0px 20px 0px 30px;
+          @include header-height;
+          &:hover {
+            color: #0a7eca;
+          }
+        }
+        i {
+          color: $top-color;
+          position: absolute;
+          top: 0px;
+        }
+      }
+      .el-menu-item {
+        background-color: $top-color;
+        padding-left: 30px;
+      }
+    }
+    .header-home {
+      @include header-height;
+      &:hover {
+        border-bottom: none;
+        color: #0a7eca;
+        background: url("../static/image/home_hover.png") no-repeat 0 0;
+        background-color: $top-color;
+        border-bottom: 1px solid $top-color;
+        background-position: 0px 23px;
+        z-index: 2;
+      }
+    }
+    .el-submenu {
+      ul {
+        .el-menu-item {
+          &:hover {
+            background-color: #159eef;
+            color: #fff;
+          }
+        }
+      }
+    }
+    li:nth-of-type(2) {
+      .el-submenu__title {
+        background: url("../static/image/transport.png") no-repeat 0 0;
+        @include top-icon;
+        &:hover {
+          background: url("../static/image/transport_hover.png") no-repeat 0 0;
+          @include top-icon;
+        }
+      }
+    }
+    li:nth-of-type(3) {
+      .el-submenu__title {
+        background: url("../static/image/user.png") no-repeat 0 0;
+        @include top-icon;
+        &:hover {
+          background: url("../static/image/user_hover.png") no-repeat 0 0;
+          @include top-icon;
+        }
+      }
+    }
+    li:nth-of-type(4) {
+      .el-submenu__title {
+        background: url("../static/image/vehicle.png") no-repeat 0 0;
+        @include top-icon;
+        &:hover {
+          background: url("../static/image/vehicle_hover.png") no-repeat 0 0;
+          @include top-icon;
+        }
+      }
+    }
+    li:nth-of-type(5) {
+      .el-submenu__title {
+        background: url("../static/image/Freight.png") no-repeat 0 0;
+        @include top-icon;
+        &:hover {
+          background: url("../static/image/Freight_hover.png") no-repeat 0 0;
+          @include top-icon;
+        }
+      }
+    }
+    li:nth-of-type(6) {
+      .el-submenu__title {
+        background: url("../static/image/Settlement.png") no-repeat 0 0;
+        @include top-icon;
+        &:hover {
+          background: url("../static/image/Settlement_hover.png") no-repeat 0 0;
+          @include top-icon;
+        }
+      }
+    }
+    li:nth-of-type(7) {
+      .el-submenu__title {
+        background: url("../static/image/system.png") no-repeat 0 0;
+        @include top-icon;
+        &:hover {
+          background: url("../static/image/system_hover.png") no-repeat 0 0;
+          @include top-icon;
+        }
+      }
+    }
+    .nav-right-admin,
+    .nav-right-news {
+      display: inline-block;
+      float: right;
+      color: #fff;
+      @include header-height;
+      font-size: 16px;
+      width: 30px;
+      text-align: center;
+      padding-right: 50px;
+      position: relative;
+      .header-head-left,
+      .header-head {
+        position: relative;
+        top: 3px;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+      }
+      .header-head {
+        width: 20px;
+        height: 20px;
+      }
+      .news-number {
+        position: absolute;
+        display: inline-block;
+        background-color: #ff6262;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        font-size: 12px;
+        top: 13px;
+        right: 40px;
+        line-height: 16px;
+      }
+    }
+    .el-menu--horizontal .el-submenu .el-menu-item {
+      color: #acaeb2;
+      @include select-color;
+    }
+    .el-submenu {
+      >.el-menu {
+        top: 70px;
+        left: 0;
+      }
+    }
+    .home-top-icon {
+      position: absolute;
+      top: 23px;
+      z-index: 1;
+    }
+  }
+  /**头部tab样式**/
+  .el-tabs__nav-scroll {
+    padding-left: 25px;
+    background-color: $top-color;
+  }
+  /**侧边栏出现**/
+  .sidebar {
+    .el-tabs__nav-scroll {
+      padding-left: 64px;
+      background-color: $top-color;
+    }
+  }
+  .el-tabs__header {
+    margin: 0;
+  }
+  .el-tabs__item.is-active {
+    color: #fff;
+    background-color: #20a0ff;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid #20a0ff;
+  }
+  .el-tabs__item {
+    &:hover {
+      color: #fff;
+    }
+  }
+}

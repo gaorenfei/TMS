@@ -1,0 +1,83 @@
+//分页
+@mixin paging-css {
+  // width:40px;
+  // height:40px;
+  // line-height:40px;
+}
+
+.common-pageIng {
+  .el-pager {
+    li {
+      @include paging-css;
+    }
+  }
+  button {
+    @include paging-css;
+  }
+}
+
+.el-table .cell {
+  text-align: center;
+}
+
+// goodluck中 弹出框的样式修改
+.el-dialog__body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+//分页
+.common-pageIng {
+  padding: 30px 0px;
+  text-align: center;
+}
+
+//danger按钮
+.el-button--danger {
+  background-color: #fa5555;
+  border-color: #fa5555;
+}
+
+//自定义dialog
+.common-dialog {
+  .el-dialog--small {
+    border-radius: 10px;
+  }
+  .el-dialog__footer {
+    text-align: center;
+  }
+  .el-dialog__header {
+    border-bottom: 1px solid #dfe6ec;
+    padding: 20px 20px 10px 20px;
+  }
+  img {
+    position: absolute;
+    right: -12px;
+    top: -15px;
+    cursor: pointer;
+  }
+}
+
+//公共的input
+.com-input {
+  .check-error {
+    input {
+      border-color: red;
+    }
+  }
+  p {
+    position: absolute;
+    top: 28px;
+    color: red;
+  }
+}
+
+//selectCity组件部分样式只能在全局进行修改
+#common-select-city {
+  .address-city-city {
+    .el-tabs__header {
+      background-color: #f1f3f5;
+      border: 1px solid #ddd;
+    }
+  }
+}

@@ -1,0 +1,311 @@
+@charset "utf-8";
+#login {
+  height: 100%;
+}
+
+#container {
+  width: 70% !important;
+  top: 50px;
+}
+
+html {
+  color: #696969;
+  background: #262626;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+p {
+  font-size: 14px;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "微软雅黑", "Microsoft YaHei", Tahoma, Verdana;
+  font-size: 14px;
+  line-height: 22px;
+  color: #696969;
+  outline: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+  padding-left: 10px;
+  outline: none;
+  _outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  text-align: inherit;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+fieldset,
+img {
+  border: 0;
+  outline: none;
+  -moz-outline: none;
+}
+
+iframe {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+a {
+  color: #3f3f3f;
+  cursor: pointer;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+ul li a {
+  color: #3f3f3f;
+}
+
+.clearFloat:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearFloat {
+  zoom: 1;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.none {
+  display: none;
+}
+
+.ui-page-theme-a a,
+html .ui-bar-a a,
+html .ui-body-a a,
+html body .ui-group-theme-a a {
+  color: #ccc;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+.ui-overlay-a,
+.ui-page-theme-a,
+.ui-page-theme-a .ui-panel-wrapper {
+  text-shadow: none;
+}
+
+.ui-content .ui-listview-inset,
+.ui-panel-inner > .ui-listview-inset {
+  margin: 0;
+}
+
+.ui-shadow {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+/* top_slide_wrap */
+
+#cover {
+  width: 75%;
+  height: 100%;
+  position: absolute; // z-index: 99999 !important;
+  margin-left: 25%;
+}
+
+.top_slide_wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background: url("../static/image/bg_.gif");
+  .login-left {
+    position: relative;
+    top: 35%;
+  }
+}
+
+.top_slide_wrap_ditu,
+.top_slide_wrap_ditu-two,
+.top_slide_wrap_ditu-three {
+  width: 26%;
+  float: left;
+  color: #14b9d7;
+  position: absolute;
+  left: 172px;
+  z-index: 10;
+  font-size: 35px;
+  text-align: center;
+  line-height: 38px;
+  font-weight: bold;
+  height: 44px;
+}
+
+.top_slide_wrap_ditu-two {
+  top: 50px;
+  font-size: 20px;
+}
+
+.top_slide_wrap_ditu-three {
+  top: 100px;
+  font-size: 20px;
+  background: url("../static/image/nav_gv.png") no-repeat center 0px;
+}
+
+.top_slide_wrap_ditu-three:hover {
+  background: url("../static/image/nav_gv.png") no-repeat center -43px;
+  cursor: pointer;
+}
+
+.top_slide_wrap_ditu b {
+  font-family: "electronicFont";
+  color: #14b9d7;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 1px 1px rgba(197, 223, 248, 0.8),
+    2px 2px rgba(197, 223, 248, 0.8), 3px 3px rgba(197, 223, 248, 0.8);
+}
+
+/**login动画***/
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 1s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 1.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+//tab切换动画
+.fade-out-enter-active,
+.fade-out-leave-active {
+  transition: opacity 0s;
+}
+
+.fade-out-enter,
+.fade-out-leave-to {
+  opacity: 0;
+}

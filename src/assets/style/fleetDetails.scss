@@ -1,0 +1,22 @@
+#fleetDetails{
+    .fleetDetails-value{
+        padding: 30px;
+        .fleet-type{
+            display: inline-block;
+            margin-right: 20px
+        }
+        .fleet-text{
+            display: inline-block;
+            span{
+                display: inline-block;
+                margin-right:20px;
+            }
+        }
+        .fleet-btn{
+            margin-top:30px;
+        }
+        .fleet-table{
+            margin-top:30px;
+        }
+    }
+}

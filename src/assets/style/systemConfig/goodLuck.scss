@@ -1,0 +1,130 @@
+.address-select-btn {
+  margin-right: 10px;
+}
+
+.dialogStyle {
+  width: 850px;
+}
+
+.address-show-filter {
+  padding: 0 60px;
+  height: 40px;
+}
+
+.address-show-table {
+  margin-top: 15px;
+}
+
+.address-select {
+  border-top: 2px solid #ededed;
+  /* -moz-box-shadow: inset 5px 0px 5px -5px #ededed;
+    -webkit-box-shadow: inset 5px 0px 5px -5px #ededed; */
+  box-shadow: -2px 5px 10px #ededed inset;
+  padding-top: 23px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.address-select-header {
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 25px;
+  overflow: hidden;
+  margin-left: 23px;
+  width: 850px;
+}
+
+.address-select-header a {
+  color: #48576a;
+  padding: 5px 13px;
+  border-radius: 5px;
+}
+
+.address-select-footer {
+  margin-left: 23px;
+  width: 722px;
+  padding-top: 12px;
+  font: 16px/34px "";
+}
+
+.address-select-footer a {
+  color: #3aadff;
+  margin-right: 20px;
+}
+
+.address-select-province {
+  background: #fcfcfc;
+  position: relative;
+  width: 427px;
+  height: 394px;
+}
+
+.address-select-provinceList {
+  width: 311px;
+  height: 412px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.address-select-provinceList>li {
+  margin-top: 40px;
+}
+
+.address-select-provinceList .initial {
+  width: 12%;
+  height: 100%;
+}
+
+.address-select-provinceList ul {
+  width: 88%;
+  height: 100%;
+}
+
+.address-select-provinceList ul>li {
+  margin-bottom: 10px;
+}
+
+.address-select-pro {
+  font: 14px/34px "";
+}
+
+.address-select-city {
+  background: #f7f7f7;
+  height: 394px;
+  position: relative;
+  width: 380px;
+}
+
+.address-select-cityList {
+  width: 287px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.activeClass {
+  background: #13a0ef;
+  color: #fff !important;
+}
+
+#goodluck .cell {
+  text-align: center;
+}
+
+.goodluck-tag {
+  margin-right: 10px;
+}
+
+.goodluck-tag-box {
+  margin-top: 10px;
+}
+
+#goodluck .el-dialog--tiny {
+  width: 850px;
+}

@@ -1,0 +1,103 @@
+/**** 表格线条颜色 *******/
+
+$table-color: #dfe6ec;
+
+/**** 表格头部高度 *******/
+
+$table-header-h:148px;
+#vehicleType {
+  .v-value {
+    padding: 40px 40px 20px 40px;
+    .first-table{
+      // height:800px;
+      border:1px solid #ddd;
+      margin-top:10px;
+      width: 100%;
+      min-width: 1100px;
+      thead{
+        height:150px;
+        width:100%;
+        background-color: #eef1f6;
+        color: #1f2d3d;
+        border-bottom: 1px solid #ddd;
+        .table-title,
+        .table-title-two{
+          th{
+            border-right: 1px solid #ddd;
+            text-align: center;
+          }
+          th:nth-of-type(1),
+          th:nth-of-type(2),
+          th:nth-of-type(3){
+            width:10%;
+          }
+        }
+        .table-title{
+          th{
+            height:150px;
+          }
+          th:nth-of-type(1){
+            width:5%;
+          }
+          th:nth-of-type(3){
+            border-bottom: 1px solid #ddd;
+            height:50px;
+          }
+          th:nth-of-type(6){
+            width:10%;
+          }
+        }
+      }
+      tbody{
+        border-right:1px solid #ddd;
+        width:100%;
+        .table-list{
+          width:100%;
+          border-bottom:1px solid #ddd;
+          td{
+            border-right:1px solid #ddd;
+            text-align: center;
+          }
+          .list-data-ary{
+            border-top: 1px solid #ddd;
+            display:block;
+            td{
+              border-right:none;
+              display:block;
+            }
+          }
+          .list-data-ary:nth-of-type(1){
+            border-top:none;
+          }
+        }
+      }
+    }
+  }
+  .v-dialog {
+    .el-dialog--small {
+      width: 700px;
+    }
+    .el-form-item {
+      display: inline-block;
+    }
+    .v-dialog-input {
+      .el-input,
+      .el-input__inner {
+        width: 49px;
+      }
+      .com-input {
+        display: inline-block;
+      }
+      P {
+        left: 0px;
+      }
+    }
+    .el-input,
+    .el-input__inner {
+      width: 175px;
+    }
+    .add-new-car {
+      display: inline-block;
+    }
+  }
+}

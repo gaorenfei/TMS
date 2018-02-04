@@ -1,0 +1,302 @@
+#vehicleBrand {
+  padding: 2%;
+}
+
+.letterSearch {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, #f2f2f2 0%, #fff 100%);
+}
+
+.letter-ul {
+  height: 100%;
+}
+
+.letter-li {
+  width: 3.8%;
+  height: 100%;
+  text-align: center;
+  line-height: 49px;
+}
+
+.letter-a {
+  font-size: 17px;
+  font-family: "Lucida Grande", "Lucida Sans", Helvetica, Arial, "Sans";
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.letter-gray {
+  color: #333;
+}
+
+.letter-lightgray {
+  color: #dfe6ec !important;
+  cursor: default;
+}
+
+.letter-red {
+  color: #c00 !important;
+}
+
+.vehicle-table {
+  margin-top: 20px;
+  width: 85%;
+}
+
+.vehicle-table td {
+  padding: 20px;
+}
+
+.vehicle-btn {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.vehicle-fir {
+  width: 100px !important;
+}
+
+.beforeScroll {
+  position: static;
+}
+
+.afterScroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.vehicle-li {
+  width: 100px;
+  height: 56px;
+}
+
+#vehicleBrand .el-dialog--tiny {
+  width: 630px;
+}
+
+.vehicleStyle {
+  width: 630px;
+}
+
+.dialog-table {
+  padding: 0 30px;
+}
+
+.dialog-table-box {
+  box-shadow: 0px 0px 15px 0px #9d9d9d;
+}
+
+.dialog-table-box table {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  color: #1f2d3d;
+}
+
+.dialog-table-box th {
+  height: 40px;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #eef1f6;
+  text-align: center;
+}
+
+.dialog-table-box td {
+  height: 40px;
+  min-width: 0;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  text-align: center;
+  border-right: 1px solid #dfe6ec;
+  border-bottom: 1px solid #dfe6ec;
+}
+
+.dialog-table-box input {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+} // .dialog-th {
+//   border-right: 1px solid #c6a300;
+// }
+.arrow-btn {
+  background: #eef1f6;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.arrow-btn i {
+  color: #333;
+  font-weight: bold;
+}
+
+.arrow-down-trans {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.dialog-table-box .el-form-item {
+  margin: 0;
+  width: 410px;
+}
+
+.dialog-table-box input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #dfe6ec; // font-weight: 300;
+  font-size: 12px;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #dfe6ec;
+  font-size: 12px;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #dfe6ec;
+  font-size: 12px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #dfe6ec;
+  font-size: 12px;
+}
+
+.dialog-table-box .el-input__inner {
+  border: 0;
+  height: 40px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.dialog-table-box .el-icon-edit-class {
+  margin-right: 15px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.Unpass {
+  color: #c00;
+}
+
+.edit-red {
+  color: #c00 !important;
+}
+
+.edit-gray {
+  color: #bfcbda;
+}
+
+.edit-blue {
+  color: #20a0ff;
+} //过渡
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  13% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  38% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-75px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  13% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  38% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-75px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.vehicle-li-active {
+  transition: all 1s ease; //transform: translate(0px, 0px) rotate(0deg);
+}
+
+.vehicle-li-delete {
+  animation: circle 1s linear;
+  -webkit-animation: circle 1s linear;
+}
+
+#vehicleBrand .el-input {
+  float: left;
+}
+
+.modelTag {
+  cursor: pointer;
+}
+
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.vehicle-btn-over {
+  animation: appear 0.2s linear;
+  -webkit-animation: appear 0.2s linear;
+}
+
+#vehicleBrand .el-form-item__error {
+  right: 0;
+  top: 25%;
+  margin-left: 278px;
+}
