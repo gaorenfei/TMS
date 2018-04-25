@@ -31,41 +31,30 @@ module.exports = {
     assetsSubDirectory: "static",
     assetsPublicPath: "/",
     proxyTable: {
-      "*": {
-        target: "http://172.16.0.39:8080",
-        changeOrigin: true,
-        filter: function (pathname, req) {
-          return pathname.match(".do$");
-          //   //return pathname.match("/mock");
-        },
-        //router 用来调别人的接口的,同时需要调多个接口
-        router: {
-          //石乾
-          // "/extralService/queryAdd.do": "http://172.16.0.38:8080",
-          // "/extralService/deleteAreaAdd.do": "http://172.16.0.38:8080",
-          // "/extralService/queryAllAdd.do": "http://172.16.0.38:8080",
-          // "/extralService/addListAdd.do": "http://172.16.0.38:8080",
-          // "/extralService/queryGood.do": "http://172.16.0.38:8080",
-          // "/extralService/deleteGoods.do": "http://172.16.0.38:8080",
-          // "/extralService/queryAllGood.do": "http://172.16.0.38:8080",
-          // "/extralService/addListGood.do": "http://172.16.0.38:8080",
-          // "/extralService/queryInc.do": "http://172.16.0.38:8080",
-          // "/extralService/deleteAreaIncrement.do": "http://172.16.0.38:8080",
-          // "/extralService/queryAllInc.do": "http://172.16.0.38:8080",
-          // "/extralService/addListInc.do": "http://172.16.0.38:8080",
-          // // //陈勇
-          "/carBrandAtt/select.do": "http://172.16.0.37:8080",
-          "/carBrandAtt/edit.do": "http://172.16.0.37:8080",
-          "/carBrandAtt/add.do": "http://172.16.0.37:8080",
-          "/carBrandAtt/update.do": "http://172.16.0.37:8080",
-          "/carBrandAtt/delete.do": "http://172.16.0.37:8080",
-
-          "/areaOpenCar/select.do": "http://172.16.0.37:8080",
-          "/areaOpenCar/add.do": "http://172.16.0.37:8080",
-          "/areaOpenCar/delete.do": "http://172.16.0.37:8080",
-          "/carTypeList/select.do": "http://172.16.0.37:8080"
-        }
-      }
+      // "*": {
+      //   target: "http://172.16.0.39:8080",
+      //   changeOrigin: true,
+      //   filter: function (pathname, req) {
+      //     return pathname.match(".do$");
+      //     //   //return pathname.match("/mock");
+      //   },
+      //   //router 用来调别人的接口的,同时需要调多个接口
+      //   router: {
+      //     //石乾
+      //     "/extralService/queryAdd.do": "http://172.16.0.38:8080",
+      //     "/extralService/deleteAreaAdd.do": "http://172.16.0.38:8080",
+      //     "/extralService/queryAllAdd.do": "http://172.16.0.38:8080",
+      //     "/extralService/addListAdd.do": "http://172.16.0.38:8080",
+      //     "/extralService/queryGood.do": "http://172.16.0.38:8080",
+      //     "/extralService/deleteGoods.do": "http://172.16.0.38:8080",
+      //     "/extralService/queryAllGood.do": "http://172.16.0.38:8080",
+      //     "/extralService/addListGood.do": "http://172.16.0.38:8080",
+      //     "/extralService/queryInc.do": "http://172.16.0.38:8080",
+      //     "/extralService/deleteAreaIncrement.do": "http://172.16.0.38:8080",
+      //     "/extralService/queryAllInc.do": "http://172.16.0.38:8080",
+      //     "/extralService/addListInc.do": "http://172.16.0.38:8080",
+      //   }
+      // }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
