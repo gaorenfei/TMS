@@ -33,6 +33,13 @@ export default {
       })
     }
   },
+  watch:{
+    "$route"(to,from){
+        //from 对象中包含当前地址
+        //to 对象中包含目标地址
+        //其实还有一个next参数的，这个参数是控制路由是否跳转的，如果没写，可以不用写next()来代表允许路由跳转，如果写了就必须写next(),否则路由是不会生效的。
+    }
+  },
   components: {
     headers
   }

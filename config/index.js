@@ -32,8 +32,8 @@ module.exports = {
     assetsPublicPath: "/",
     proxyTable: {
       // "*": {
-      //   target: "http://172.16.0.39:8080",
-      //   changeOrigin: true,
+      //   target: "http://172.16.0.39:8080", // 接口域名
+      //   changeOrigin: true, //是否跨域
       //   filter: function (pathname, req) {
       //     return pathname.match(".do$");
       //     //   //return pathname.match("/mock");

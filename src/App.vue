@@ -15,5 +15,5 @@ export default {
 </script>
 
 <style lang='scss'>
-@import "./assets/style/entrance";
+  @import "./assets/style/entrance";
 </style>
